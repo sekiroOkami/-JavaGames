@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="client">
+    <output-path>$PROJECT_DIR$/out/artifacts/client</output-path>
+    <root id="archive" name="hitcounter.jar">
+      <element id="module-output" name="hitcounter" />
+    </root>
+  </artifact>
+</component>

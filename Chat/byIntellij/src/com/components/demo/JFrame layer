@@ -1,0 +1,27 @@
+ _______________________________________________________________
+|                 JFrame (Root Pane)                            |
+|                                                               |
+|  ___________________________________________________________  |
+| |                        Title Bar                          | |
+| |   [Icon] [Title] [Buttons]                                | |
+| |                                                           | |
+|  -----------------------------------------------------------  |
+|                                                               |
+|  ___________________   ___________________________________  |
+| |   Menu Bar       | | |                                   | |
+| |------------------| | |                                   | |
+| |                   | | |                                   | |
+| |___________________| | |        Content Pane              | |
+|                        | |                                   | |
+|                        | |                                   | |
+|                        | |                                   | |
+|________________________| |___________________________________| |
+|                                                               |
+ -----------------------------------------------------------------
+The outermost layer represents the JFrame, which acts as the root pane.
+The title bar at the top contains the title of the window, along with optional icons and buttons for minimizing, maximizing, and closing the window.
+Below the title bar, there is space for a menu bar if one is added to the frame.
+The main area of the window is the content pane, where you typically add your Swing components such as buttons, labels, text fields, etc.
+The content pane is managed by the root pane and is where most of the application's GUI is displayed.
+The menu bar, if present, overlays the top of the content pane but is part of the root pane.
+Other layers, such as the layered pane and glass pane, are not shown in this simplified illustration but are also managed by the root pane.
