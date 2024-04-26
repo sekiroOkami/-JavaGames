@@ -26,7 +26,8 @@ public class ChatClient {
     private SocketChannel socketChannel;
     private JTextArea chatArea = new JTextArea(20, 20);
     private JTextArea inputArea = new JTextArea(3, 20);
-    private ExecutorService executor = Executors.newSingleThreadExecutor();
+    private ExecutorService executor = Executors.newCachedThreadPool();
+    private LogInDialog logInDialog = new LogInDialog("Chat Client");
 
     public static void main(String[] args) {
         LookAndFeelUtils.setCrossPlatformLookAndFeel();
@@ -53,6 +54,11 @@ public class ChatClient {
                     }
                 }
         );
+        login();
+    }
+
+    private void login() {
+        logInDialog.setVisible(true);
     }
 
     private void closeConnectionObject() {
